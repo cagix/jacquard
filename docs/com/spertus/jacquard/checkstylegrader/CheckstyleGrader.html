@@ -127,9 +127,16 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link">Callable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../common/Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCallable(com.spertus.jacquard.common.Target)" class="member-name-link">getCallable</a><wbr>(<a href="../common/Target.html" title="class in com.spertus.jacquard.common">Target</a>&nbsp;target)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCallableMultiTarget(com.spertus.jacquard.common.Target...)" class="member-name-link">getCallableMultiTarget</a><wbr>(<a href="../common/Target.html" title="class in com.spertus.jacquard.common">Target</a>...&nbsp;targets)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link"><code>Callable</code></a> through which this grader can be called.</div>
+<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link"><code>Callable</code></a> through which this grader can be called on
+ multiple targets.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link">Callable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../common/Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getCallableSingleTarget(com.spertus.jacquard.common.Target)" class="member-name-link">getCallableSingleTarget</a><wbr>(<a href="../common/Target.html" title="class in com.spertus.jacquard.common">Target</a>&nbsp;target)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link"><code>Callable</code></a> through which this grader can be called on
+ a single target.</div>
 </div>
 </div>
 </div>
@@ -192,16 +199,37 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="getCallable(com.spertus.jacquard.common.Target)">
-<h3>getCallable</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link">Callable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../common/Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&gt;</span>&nbsp;<span class="element-name">getCallable</span><wbr><span class="parameters">(<a href="../common/Target.html" title="class in com.spertus.jacquard.common">Target</a>&nbsp;target)</span></div>
-<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../common/Grader.html#getCallable(com.spertus.jacquard.common.Target)">Grader</a></code></span></div>
-<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link"><code>Callable</code></a> through which this grader can be called.</div>
+<section class="detail" id="getCallableSingleTarget(com.spertus.jacquard.common.Target)">
+<h3>getCallableSingleTarget</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link">Callable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../common/Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&gt;</span>&nbsp;<span class="element-name">getCallableSingleTarget</span><wbr><span class="parameters">(<a href="../common/Target.html" title="class in com.spertus.jacquard.common">Target</a>&nbsp;target)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../common/Grader.html#getCallableSingleTarget(com.spertus.jacquard.common.Target)">Grader</a></code></span></div>
+<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link"><code>Callable</code></a> through which this grader can be called on
+ a single target.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../common/Grader.html#getCallable(com.spertus.jacquard.common.Target)">getCallable</a></code>&nbsp;in class&nbsp;<code><a href="../common/Grader.html" title="class in com.spertus.jacquard.common">Grader</a></code></dd>
+<dd><code><a href="../common/Grader.html#getCallableSingleTarget(com.spertus.jacquard.common.Target)">getCallableSingleTarget</a></code>&nbsp;in class&nbsp;<code><a href="../common/Grader.html" title="class in com.spertus.jacquard.common">Grader</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>target</code> - the target</dd>
+<dt>Returns:</dt>
+<dd>a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link"><code>Callable</code></a> through which this grader can be called</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getCallableMultiTarget(com.spertus.jacquard.common.Target...)">
+<h3>getCallableMultiTarget</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link">Callable</a>&lt;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../common/Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&gt;</span>&nbsp;<span class="element-name">getCallableMultiTarget</span><wbr><span class="parameters">(<a href="../common/Target.html" title="class in com.spertus.jacquard.common">Target</a>...&nbsp;targets)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../common/Grader.html#getCallableMultiTarget(com.spertus.jacquard.common.Target...)">Grader</a></code></span></div>
+<div class="block">Gets a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link"><code>Callable</code></a> through which this grader can be called on
+ multiple targets. The default implementation just appends the results
+ of successive calls to <a href="../common/Grader.html#getCallableSingleTarget(com.spertus.jacquard.common.Target)"><code>Grader.getCallableSingleTarget(Target)</code></a>, but
+ subclasses may provide their own implementations to handle multiple
+ targets specially.</div>
+<dl class="notes">
+<dt>Overrides:</dt>
+<dd><code><a href="../common/Grader.html#getCallableMultiTarget(com.spertus.jacquard.common.Target...)">getCallableMultiTarget</a></code>&nbsp;in class&nbsp;<code><a href="../common/Grader.html" title="class in com.spertus.jacquard.common">Grader</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>targets</code> - the targets</dd>
 <dt>Returns:</dt>
 <dd>a <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Callable.html" title="class or interface in java.util.concurrent" class="external-link"><code>Callable</code></a> through which this grader can be called</dd>
 </dl>
