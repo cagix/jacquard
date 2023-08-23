@@ -132,7 +132,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#grade(java.util.List)" class="member-name-link">grade</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Target.html" title="class in com.spertus.jacquard.common">Target</a>&gt;&nbsp;targets)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Grades the specified target files and directories.</div>
+<div class="block">Grades the provided targets.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#gradeAll(com.spertus.jacquard.common.Target,com.spertus.jacquard.common.Grader...)" class="member-name-link">gradeAll</a><wbr>(<a href="Target.html" title="class in com.spertus.jacquard.common">Target</a>&nbsp;target,
@@ -257,7 +257,7 @@ loadScripts(document, 'script');</script>
 <section class="detail" id="grade(java.util.List)">
 <h3>grade</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;</span>&nbsp;<span class="element-name">grade</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Target.html" title="class in com.spertus.jacquard.common">Target</a>&gt;&nbsp;targets)</span></div>
-<div class="block">Grades the specified target files and directories.</div>
+<div class="block">Grades the provided targets.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>targets</code> - the targets</dd>
@@ -278,6 +278,8 @@ loadScripts(document, 'script');</script>
 <dd><code>targets</code> - the targets</dd>
 <dt>Returns:</dt>
 <dd>the results</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../exceptions/ClientException.html" title="class in com.spertus.jacquard.exceptions">ClientException</a></code> - if <a href="Autograder.html" title="class in com.spertus.jacquard.common"><code>Autograder</code></a> has not been initialized</dd>
 </dl>
 </section>
 </li>
@@ -293,6 +295,8 @@ loadScripts(document, 'script');</script>
 <dd><code>graders</code> - graders, in the order they should be run</dd>
 <dt>Returns:</dt>
 <dd>the collected results</dd>
+<dt>Throws:</dt>
+<dd><code><a href="../exceptions/ClientException.html" title="class in com.spertus.jacquard.exceptions">ClientException</a></code> - if <a href="Autograder.html" title="class in com.spertus.jacquard.common"><code>Autograder</code></a> has not been initialized</dd>
 </dl>
 </section>
 </li>
