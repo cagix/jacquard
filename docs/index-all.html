@@ -69,6 +69,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Visible to the student when grading is complete.</div>
 </dd>
+<dt><a href="com/spertus/jacquard/common/Result.Order.html#ALPHABETICAL" class="member-name-link">ALPHABETICAL</a> - Enum constant in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a></dt>
+<dd>
+<div class="block">Alphabetical order by result name.</div>
+</dd>
 <dt><a href="com/spertus/jacquard/common/Autograder.html" class="type-name-link" title="class in com.spertus.jacquard.common">Autograder</a> - Class in <a href="com/spertus/jacquard/common/package-summary.html">com.spertus.jacquard.common</a></dt>
 <dd>
 <div class="block">A singleton class containing configuration information.</div>
@@ -203,6 +207,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/spertus/jacquard/common/DebugLevel.html" class="type-name-link" title="enum class in com.spertus.jacquard.common">DebugLevel</a> - Enum Class in <a href="com/spertus/jacquard/common/package-summary.html">com.spertus.jacquard.common</a></dt>
 <dd>
 <div class="block">The level of support for debugging.</div>
+</dd>
+<dt><a href="com/spertus/jacquard/common/Result.Order.html#DECREASING_MAX_SCORE" class="member-name-link">DECREASING_MAX_SCORE</a> - Enum constant in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a></dt>
+<dd>
+<div class="block">In decreasing order by maximum score.</div>
 </dd>
 <dt><a href="com/spertus/jacquard/common/Autograder.Builder.html#DEFAULT_JAVA_LEVEL" class="member-name-link">DEFAULT_JAVA_LEVEL</a> - Static variable in class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Autograder.Builder.html" title="class in com.spertus.jacquard.common">Autograder.Builder</a></dt>
 <dd>
@@ -503,6 +511,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Whether to include the output in the test results.</div>
 </dd>
+<dt><a href="com/spertus/jacquard/common/Result.Order.html#INCREASING_MAX_SCORE" class="member-name-link">INCREASING_MAX_SCORE</a> - Enum constant in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a></dt>
+<dd>
+<div class="block">In increasing order by maximum score.</div>
+</dd>
 <dt><a href="com/spertus/jacquard/common/Autograder.html#init()" class="member-name-link">init()</a> - Static method in class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Autograder.html" title="class in com.spertus.jacquard.common">Autograder</a></dt>
 <dd>
 <div class="block">Initializes the autograder with all default values.</div>
@@ -737,6 +749,10 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">The name of the test.</div>
 </dd>
+<dt><a href="com/spertus/jacquard/common/Result.Order.html#NATURAL" class="member-name-link">NATURAL</a> - Enum constant in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a></dt>
+<dd>
+<div class="block">The order in which they were generated.</div>
+</dd>
 <dt><a href="com/spertus/jacquard/common/DebugLevel.html#NONE" class="member-name-link">NONE</a> - Enum constant in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/DebugLevel.html" title="enum class in com.spertus.jacquard.common">DebugLevel</a></dt>
 <dd>
 <div class="block">No information is shown to users about the cause of problems.</div>
@@ -773,9 +789,14 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/spertus/jacquard/publisher/Publisher.html#%3Cinit%3E()" class="member-name-link">Publisher()</a> - Constructor for class com.spertus.jacquard.publisher.<a href="com/spertus/jacquard/publisher/Publisher.html" title="class in com.spertus.jacquard.publisher">Publisher</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/spertus/jacquard/publisher/GradescopePublisher.html#publishResults(java.util.List)" class="member-name-link">publishResults(List&lt;Result&gt;)</a> - Method in class com.spertus.jacquard.publisher.<a href="com/spertus/jacquard/publisher/GradescopePublisher.html" title="class in com.spertus.jacquard.publisher">GradescopePublisher</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="com/spertus/jacquard/publisher/Publisher.html#publishResults(java.util.List)" class="member-name-link">publishResults(List&lt;Result&gt;)</a> - Method in class com.spertus.jacquard.publisher.<a href="com/spertus/jacquard/publisher/Publisher.html" title="class in com.spertus.jacquard.publisher">Publisher</a></dt>
+<dd>
+<div class="block">Publishes the results in a manner appropriate for the external grading
+ tool.</div>
+</dd>
+<dt><a href="com/spertus/jacquard/publisher/GradescopePublisher.html#publishResults(java.util.List,com.spertus.jacquard.common.Result.Order)" class="member-name-link">publishResults(List&lt;Result&gt;, Result.Order)</a> - Method in class com.spertus.jacquard.publisher.<a href="com/spertus/jacquard/publisher/GradescopePublisher.html" title="class in com.spertus.jacquard.publisher">GradescopePublisher</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/spertus/jacquard/publisher/Publisher.html#publishResults(java.util.List,com.spertus.jacquard.common.Result.Order)" class="member-name-link">publishResults(List&lt;Result&gt;, Result.Order)</a> - Method in class com.spertus.jacquard.publisher.<a href="com/spertus/jacquard/publisher/Publisher.html" title="class in com.spertus.jacquard.publisher">Publisher</a></dt>
 <dd>
 <div class="block">Publishes the results in a manner appropriate for the external grading
  tool.</div>
@@ -783,6 +804,10 @@ loadScripts(document, 'script');</script>
 </dl>
 <h2 class="title" id="I:R">R</h2>
 <dl class="index">
+<dt><a href="com/spertus/jacquard/common/Result.html#reorderResults(java.util.List,com.spertus.jacquard.common.Result.Order)" class="member-name-link">reorderResults(List&lt;Result&gt;, Result.Order)</a> - Static method in class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.html" title="class in com.spertus.jacquard.common">Result</a></dt>
+<dd>
+<div class="block">Produces a sorted copy of the results.</div>
+</dd>
 <dt><a href="com/spertus/jacquard/common/Autograder.html#resetForTest()" class="member-name-link">resetForTest()</a> - Static method in class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Autograder.html" title="class in com.spertus.jacquard.common">Autograder</a></dt>
 <dd>
 <div class="block">Resets Autograder initialization so multiple tests can
@@ -800,6 +825,10 @@ loadScripts(document, 'script');</script>
 <dt><a href="com/spertus/jacquard/common/Result.html#%3Cinit%3E(java.lang.String,double,double,java.lang.String,com.spertus.jacquard.common.Visibility)" class="member-name-link">Result(String, double, double, String, Visibility)</a> - Constructor for class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.html" title="class in com.spertus.jacquard.common">Result</a></dt>
 <dd>
 <div class="block">Creates a result with the specified properties.</div>
+</dd>
+<dt><a href="com/spertus/jacquard/common/Result.Order.html" class="type-name-link" title="enum class in com.spertus.jacquard.common">Result.Order</a> - Enum Class in <a href="com/spertus/jacquard/common/package-summary.html">com.spertus.jacquard.common</a></dt>
+<dd>
+<div class="block">The publication order for results.</div>
 </dd>
 <dt><a href="com/spertus/jacquard/common/Tester.html#run()" class="member-name-link">run()</a> - Method in class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Tester.html" title="class in com.spertus.jacquard.common">Tester</a></dt>
 <dd>
@@ -988,11 +1017,20 @@ loadScripts(document, 'script');</script>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
+<dt><a href="com/spertus/jacquard/common/Result.Order.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a></dt>
+<dd>
+<div class="block">Returns the enum constant of this class with the specified name.</div>
+</dd>
 <dt><a href="com/spertus/jacquard/common/Visibility.html#valueOf(java.lang.String)" class="member-name-link">valueOf(String)</a> - Static method in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Visibility.html" title="enum class in com.spertus.jacquard.common">Visibility</a></dt>
 <dd>
 <div class="block">Returns the enum constant of this class with the specified name.</div>
 </dd>
 <dt><a href="com/spertus/jacquard/common/DebugLevel.html#values()" class="member-name-link">values()</a> - Static method in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/DebugLevel.html" title="enum class in com.spertus.jacquard.common">DebugLevel</a></dt>
+<dd>
+<div class="block">Returns an array containing the constants of this enum class, in
+the order they are declared.</div>
+</dd>
+<dt><a href="com/spertus/jacquard/common/Result.Order.html#values()" class="member-name-link">values()</a> - Static method in enum class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a></dt>
 <dd>
 <div class="block">Returns an array containing the constants of this enum class, in
 the order they are declared.</div>

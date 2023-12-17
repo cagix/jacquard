@@ -44,7 +44,7 @@ loadScripts(document, 'script');</script>
 <div>
 <ul class="sub-nav-list">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested-class-summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor-summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method-summary">Method</a></li>
@@ -86,6 +86,23 @@ loadScripts(document, 'script');</script>
 </section>
 <section class="summary">
 <ul class="summary-list">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<li>
+<section class="nested-class-summary" id="nested-class-summary">
+<h2>Nested Class Summary</h2>
+<div class="caption"><span>Nested Classes</span></div>
+<div class="summary-table three-column-summary">
+<div class="table-header col-first">Modifier and Type</div>
+<div class="table-header col-second">Class</div>
+<div class="table-header col-last">Description</div>
+<div class="col-first even-row-color"><code>static enum&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="Result.Order.html" class="type-name-link" title="enum class in com.spertus.jacquard.common">Result.Order</a></code></div>
+<div class="col-last even-row-color">
+<div class="block">The publication order for results.</div>
+</div>
+</div>
+</section>
+</li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <li>
 <section class="constructor-summary" id="constructor-summary">
@@ -222,9 +239,15 @@ loadScripts(document, 'script');</script>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Makes a result indicating a total success.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setVisibility(com.spertus.jacquard.common.Visibility)" class="member-name-link">setVisibility</a><wbr>(<a href="Visibility.html" title="enum class in com.spertus.jacquard.common">Visibility</a>&nbsp;visibility)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#reorderResults(java.util.List,com.spertus.jacquard.common.Result.Order)" class="member-name-link">reorderResults</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&nbsp;results,
+ <a href="Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a>&nbsp;order)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Produces a sorted copy of the results.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setVisibility(com.spertus.jacquard.common.Visibility)" class="member-name-link">setVisibility</a><wbr>(<a href="Visibility.html" title="enum class in com.spertus.jacquard.common">Visibility</a>&nbsp;visibility)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the visibility of this result.</div>
 </div>
 </div>
@@ -543,6 +566,21 @@ loadScripts(document, 'script');</script>
 <dt>Parameters:</dt>
 <dd><code>results</code> - the results</dd>
 <dd><code>visibility</code> - the new visibility</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="reorderResults(java.util.List,com.spertus.jacquard.common.Result.Order)">
+<h3>reorderResults</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;</span>&nbsp;<span class="element-name">reorderResults</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&nbsp;results,
+ <a href="Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a>&nbsp;order)</span></div>
+<div class="block">Produces a sorted copy of the results.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>results</code> - the results</dd>
+<dd><code>order</code> - the ordering</dd>
+<dt>Returns:</dt>
+<dd>the sorted result list</dd>
 </dl>
 </section>
 </li>
