@@ -222,32 +222,42 @@ loadScripts(document, 'script');</script>
  double&nbsp;maxScore,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Makes a result with the provided score.</div>
+<div class="block">Makes a result with the provided score and message with the visibility level specified in
+ <a href="Autograder.html#visibility"><code>Autograder.visibility</code></a>.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Result.html" title="class in com.spertus.jacquard.common">Result</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#makeSuccess(java.lang.String,double,java.lang.String)" class="member-name-link">makeSuccess</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
- double&nbsp;score,
- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Makes a result indicating a total success.</div>
-</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Result.html" title="class in com.spertus.jacquard.common">Result</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#makeSuccess(java.lang.String,double,java.lang.String,com.spertus.jacquard.common.Visibility)" class="member-name-link">makeSuccess</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
- double&nbsp;score,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#makeResult(java.lang.String,double,double,java.lang.String,com.spertus.jacquard.common.Visibility)" class="member-name-link">makeResult</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ double&nbsp;actualScore,
+ double&nbsp;maxScore,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
  <a href="Visibility.html" title="enum class in com.spertus.jacquard.common">Visibility</a>&nbsp;visibility)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Makes a result with the provided characteristics.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Result.html" title="class in com.spertus.jacquard.common">Result</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#makeSuccess(java.lang.String,double,java.lang.String)" class="member-name-link">makeSuccess</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ double&nbsp;score,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Makes a result indicating a total success.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#reorderResults(java.util.List,com.spertus.jacquard.common.Result.Order)" class="member-name-link">reorderResults</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&nbsp;results,
- <a href="Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a>&nbsp;order)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Result.html" title="class in com.spertus.jacquard.common">Result</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#makeSuccess(java.lang.String,double,java.lang.String,com.spertus.jacquard.common.Visibility)" class="member-name-link">makeSuccess</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ double&nbsp;score,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ <a href="Visibility.html" title="enum class in com.spertus.jacquard.common">Visibility</a>&nbsp;visibility)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="block">Makes a result indicating a total success.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#reorderResults(java.util.List,com.spertus.jacquard.common.Result.Order)" class="member-name-link">reorderResults</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="Result.html" title="class in com.spertus.jacquard.common">Result</a>&gt;&nbsp;results,
+ <a href="Result.Order.html" title="enum class in com.spertus.jacquard.common">Result.Order</a>&nbsp;order)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Produces a sorted copy of the results.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setVisibility(com.spertus.jacquard.common.Visibility)" class="member-name-link">setVisibility</a><wbr>(<a href="Visibility.html" title="enum class in com.spertus.jacquard.common">Visibility</a>&nbsp;visibility)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setVisibility(com.spertus.jacquard.common.Visibility)" class="member-name-link">setVisibility</a><wbr>(<a href="Visibility.html" title="enum class in com.spertus.jacquard.common">Visibility</a>&nbsp;visibility)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets the visibility of this result.</div>
 </div>
 </div>
@@ -433,13 +443,35 @@ loadScripts(document, 'script');</script>
  double&nbsp;actualScore,
  double&nbsp;maxScore,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message)</span></div>
-<div class="block">Makes a result with the provided score.</div>
+<div class="block">Makes a result with the provided score and message with the visibility level specified in
+ <a href="Autograder.html#visibility"><code>Autograder.visibility</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>name</code> - the name</dd>
 <dd><code>actualScore</code> - the number of points earned</dd>
 <dd><code>maxScore</code> - the number of points possible</dd>
 <dd><code>message</code> - any message</dd>
+<dt>Returns:</dt>
+<dd>a result</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="makeResult(java.lang.String,double,double,java.lang.String,com.spertus.jacquard.common.Visibility)">
+<h3>makeResult</h3>
+<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Result.html" title="class in com.spertus.jacquard.common">Result</a></span>&nbsp;<span class="element-name">makeResult</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ double&nbsp;actualScore,
+ double&nbsp;maxScore,
+ <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;message,
+ <a href="Visibility.html" title="enum class in com.spertus.jacquard.common">Visibility</a>&nbsp;visibility)</span></div>
+<div class="block">Makes a result with the provided characteristics.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>name</code> - the name</dd>
+<dd><code>actualScore</code> - the number of points earned</dd>
+<dd><code>maxScore</code> - the number of points possible</dd>
+<dd><code>message</code> - any message</dd>
+<dd><code>visibility</code> - the visibility</dd>
 <dt>Returns:</dt>
 <dd>a result</dd>
 </dl>

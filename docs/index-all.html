@@ -231,6 +231,10 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/spertus/jacquard/crosstester/DependencyInjector.html#%3Cinit%3E()" class="member-name-link">DependencyInjector()</a> - Constructor for class com.spertus.jacquard.crosstester.<a href="com/spertus/jacquard/crosstester/DependencyInjector.html" title="class in com.spertus.jacquard.crosstester">DependencyInjector</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/spertus/jacquard/junittester/GradedTest.html#description()" class="member-name-link">description()</a> - Element in annotation interface com.spertus.jacquard.junittester.<a href="com/spertus/jacquard/junittester/GradedTest.html" title="annotation interface in com.spertus.jacquard.junittester">GradedTest</a></dt>
+<dd>
+<div class="block">A description of the defect detected by this test.</div>
+</dd>
 <dt><a href="com/spertus/jacquard/publisher/GradescopePublisher.html#displayResults(java.util.List)" class="member-name-link">displayResults(List&lt;Result&gt;)</a> - Method in class com.spertus.jacquard.publisher.<a href="com/spertus/jacquard/publisher/GradescopePublisher.html" title="class in com.spertus.jacquard.publisher">GradescopePublisher</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/spertus/jacquard/publisher/Publisher.html#displayResults(java.util.List)" class="member-name-link">displayResults(List&lt;Result&gt;)</a> - Method in class com.spertus.jacquard.publisher.<a href="com/spertus/jacquard/publisher/Publisher.html" title="class in com.spertus.jacquard.publisher">Publisher</a></dt>
@@ -685,7 +689,12 @@ loadScripts(document, 'script');</script>
 </dd>
 <dt><a href="com/spertus/jacquard/common/Result.html#makeResult(java.lang.String,double,double,java.lang.String)" class="member-name-link">makeResult(String, double, double, String)</a> - Static method in class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.html" title="class in com.spertus.jacquard.common">Result</a></dt>
 <dd>
-<div class="block">Makes a result with the provided score.</div>
+<div class="block">Makes a result with the provided score and message with the visibility level specified in
+ <a href="com/spertus/jacquard/common/Autograder.html#visibility"><code>Autograder.visibility</code></a>.</div>
+</dd>
+<dt><a href="com/spertus/jacquard/common/Result.html#makeResult(java.lang.String,double,double,java.lang.String,com.spertus.jacquard.common.Visibility)" class="member-name-link">makeResult(String, double, double, String, Visibility)</a> - Static method in class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.html" title="class in com.spertus.jacquard.common">Result</a></dt>
+<dd>
+<div class="block">Makes a result with the provided characteristics.</div>
 </dd>
 <dt><a href="com/spertus/jacquard/common/Result.html#makeSuccess(java.lang.String,double,java.lang.String)" class="member-name-link">makeSuccess(String, double, String)</a> - Static method in class com.spertus.jacquard.common.<a href="com/spertus/jacquard/common/Result.html" title="class in com.spertus.jacquard.common">Result</a></dt>
 <dd>
